@@ -62,6 +62,7 @@ class SpideController(object):
                         print "in Blog module and the exception is ", e
                 if text_mood:
                     try:
+
                         self.db.Mood.insert(text_mood)
                         text_information["Moods_WeGet"] = len(text_mood)
                     except Exception, e:
